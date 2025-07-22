@@ -1,0 +1,647 @@
+fileFormatVersion: 2
+guid: 1daab8d345657f348ae688aa57aae689
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Metallic Veins
+    second: {fileID: 2100000, guid: d0c37b95bcf40284493bf92301029db3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cstm_CampusLampPost_Emissive
+    second: {fileID: 2100000, guid: cd88d78f4433be947a81d26d901f8033, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cstm_Glass
+    second: {fileID: 2100000, guid: b381351cde4effc459aa3e0d0842124a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Procedural Water
+    second: {fileID: 2100000, guid: bbb82f88c50422a48b66749c28304e12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ST_Nat_Bush05C_02_Alpha
+    second: {fileID: 2100000, guid: 27fab851cd1c7c4438638c28177d97fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Acc_FireHydrant01
+    second: {fileID: 2100000, guid: 6ae354eaf449d3e4e90b39f289a125f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Bckg_BlackwellAcad01
+    second: {fileID: 2100000, guid: fc3741cb6e688114a9741e7093089584, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Bckg_BlackwellAcad01_Windows
+    second: {fileID: 2100000, guid: 912b1aeb0ffb9f945b3fbfa8634e838f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Bckg_FootballBarrier01
+    second: {fileID: 2100000, guid: 1e7586441fc4f5043a05dc7b70d60204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Bckg_FootballBarrier01_Alpha
+    second: {fileID: 2100000, guid: b7ad7a1536a3acf4d878ee954814ac26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Build_EntranceCover01
+    second: {fileID: 2100000, guid: c34e7857d56753e42a994cacd0865546, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ceil_Plastic01
+    second: {fileID: 2100000, guid: 3c500cdee7faf6e4589df8aacdee34ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Decal_Coins_Alpha
+    second: {fileID: 2100000, guid: 35a1253ff64860548aa5a39ed8039e9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Decal_VortexCarv01_Alpha
+    second: {fileID: 2100000, guid: 4611fb7c3e34c924f9c141a0cf29d84e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Doors_PanicDoorHigh01
+    second: {fileID: 2100000, guid: 9124c6bda527ecd4e8e07d63538d85f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Doors_PanicDoorHigh01_Alpha
+    second: {fileID: 2100000, guid: e6264eeb7fe613141bcc56a7d7a4ef6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Fab_USAFlag02
+    second: {fileID: 2100000, guid: 13183f18b991133459c6e2d5935baec0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Flora_Bush02Opaque
+    second: {fileID: 2100000, guid: 587e0e637ba51e042a12e5f8ef2481f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Flora_Bush02_Alpha
+    second: {fileID: 2100000, guid: ae31972411ccd5048bd204015ed4b03d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Flora_Bush03_Alpha
+    second: {fileID: 2100000, guid: abd87395df88463458497122e5a863d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Flora_Bush07_02_Alpha
+    second: {fileID: 2100000, guid: 385c46d171b8906408c9e131e70ba06b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Fol_Hedge01_Alpha
+    second: {fileID: 2100000, guid: f959f1abbbd9963479f7d3fbcd2ac523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Fol_Shrubland01_Alpha
+    second: {fileID: 2100000, guid: 263537eb022efb24fb4bd0dfc30d094c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Furn_Trashcan01
+    second: {fileID: 2100000, guid: c86621a53b8aff141aee60b609393c96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_Asphalt04
+    second: {fileID: 2100000, guid: c3fac64bd373e4945bb4d785df40e076, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_CampusPathway01_Rmst
+    second: {fileID: 2100000, guid: af540d87e143b28489be1561c407ea1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_PlasticTiles01A
+    second: {fileID: 2100000, guid: 5f5aeb0698a4dcc44a575f766e78c401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_Road01C
+    second: {fileID: 2100000, guid: 116e44cb0d6eb5b4786d7d7b3dce031d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_SideWalkEdge01
+    second: {fileID: 2100000, guid: 2061af73644e16c4e95c2710cfc8f6cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_SideWalkEdge02
+    second: {fileID: 2100000, guid: 6c097974dfee5db42a36cfd3622ef604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_Sidewalk01
+    second: {fileID: 2100000, guid: cdf8cfb4eb78deb4c8c98cae1d764ea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Ground_TrafficMarks01B_Alpha
+    second: {fileID: 2100000, guid: c06621f317800e44c9b0bde3708f9827, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Light_CampusLampPost01
+    second: {fileID: 2100000, guid: 7ee91d6674d7e054091001c919047788, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Light_LampDesk03b_Emissive
+    second: {fileID: 2100000, guid: b8adf9cb22d2ad741b4321bef99026ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Light_Lamppost01_Emissive
+    second: {fileID: 2100000, guid: a32a18980ced9584d83b32ea76f54928, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Matte_FirTree01_Alpha
+    second: {fileID: 2100000, guid: 5cf236ba21bf0c147852912a81749d94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Matte_HorizonSea
+    second: {fileID: 2100000, guid: e7839b9396f0dbf48b601a221cd97638, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Matte_LighthouseCliff01_Alpha
+    second: {fileID: 2100000, guid: 93b67f9fb63592a4b8fb88dbff7832ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Matte_Mountain01_Alpha
+    second: {fileID: 2100000, guid: 7c87a1230a0230c4fb92233fad2da704, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Matte_TreeLine02_Alpha
+    second: {fileID: 2100000, guid: cd2c7a1bcf4526943b6816199a0544a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_2DSpruceTreeStack01_Alpha
+    second: {fileID: 2100000, guid: fa7fffa32e703a94f898d0d85f17baa5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_2DYewTree01_Alpha
+    second: {fileID: 2100000, guid: 10ef29a0db76996499e72aee7c7c0df1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_AshTreeNew
+    second: {fileID: 2100000, guid: a0f7b7dbedee97e44998ad817529daf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_AshTreeNew_Alpha
+    second: {fileID: 2100000, guid: 24689f4842430944bbdd74b201a806ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FirTree01A_2D_Alpha
+    second: {fileID: 2100000, guid: dc73c9d015d5a1a41ae34e3b129318cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FirTree01B_2D_Alpha
+    second: {fileID: 2100000, guid: 95c77bf2339bdde438362cf9a3adfd0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FirTree01B_Plane_Alpha
+    second: {fileID: 2100000, guid: b88625f3b0c839d4dad36855c7749a63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FirTree01_Plane_Alpha
+    second: {fileID: 2100000, guid: 30b22e682d7c16341839f27fa2e26ce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FlowerBush01_Alpha
+    second: {fileID: 2100000, guid: 496f6f6ed45fcf04fb367bf2a52868b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_FlowerBush02_Alpha
+    second: {fileID: 2100000, guid: c54d1b6ae3de8f24db2ee260d02750ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Nat_Leaves02_Alpha
+    second: {fileID: 2100000, guid: 48fc608a36f11bc41a4a6cceeab66e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Sign_Campus01
+    second: {fileID: 2100000, guid: 4db274f3ab4a6ba4e8f58cee8c3d4d7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Sign_ParkingEntrance01
+    second: {fileID: 2100000, guid: 17909d2d8cd7e0644a37140d47773576, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Sign_ParkingEntrance02
+    second: {fileID: 2100000, guid: c9faf37d13951cf45b447cbf99ae3e60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Sign_RoadPannel01
+    second: {fileID: 2100000, guid: 2b52ccb67d60692479cb85c162919e7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Stairs_RailGuard01
+    second: {fileID: 2100000, guid: bc23d9af07b380e4e8ba0fe6ff4e92e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_UFurn_BenchWood
+    second: {fileID: 2100000, guid: 93827e30fb5ad514babddffca762cdd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_UFurn_BenchWood02
+    second: {fileID: 2100000, guid: 93285f43e7062c44e90b3a9c26cd5372, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_UFurn_BenchWood_Metal
+    second: {fileID: 2100000, guid: ea0d2d4ca03e53743a564993e1a7f192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_UFurn_CliffTable01
+    second: {fileID: 2100000, guid: bd66ce78cd30c354c840744e5630d75e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_UFurn_Funtain01
+    second: {fileID: 2100000, guid: 24fa36b468273714e8e142bd938a7950, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Brick01
+    second: {fileID: 2100000, guid: e183a348a19fce34db713bcd6f357d79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_CampusExt01B
+    second: {fileID: 2100000, guid: 1e4379fba31907448b7f09856d567342, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_CampusTower01
+    second: {fileID: 2100000, guid: 511e0292aa348ef4e8f49e66c3af07a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Cement02
+    second: {fileID: 2100000, guid: 54d3b63b9b5cbaf4a9b569dbc8a12cf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_ClassRoomWood01
+    second: {fileID: 2100000, guid: 7586b7e50def9bf45a7f8464462f8836, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Parts01
+    second: {fileID: 2100000, guid: 5fd9249a703005644a1e449398d64c34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Parts02
+    second: {fileID: 2100000, guid: 7d4f8dc5911152249870f9edaee9144f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Plaster01
+    second: {fileID: 2100000, guid: b03ebb34502b23946a600c6266dcb7cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_PreFab01
+    second: {fileID: 2100000, guid: 8317df7507a336b4db2009c1f3aaef25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Standard01
+    second: {fileID: 2100000, guid: ee2c0bda5d7238442bfcc345e86e91d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Standard02
+    second: {fileID: 2100000, guid: c94c2702a056ff64cbe5346c8ac7584d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Standard04_Metal
+    second: {fileID: 2100000, guid: e6744a75d5fee0e4a898a8478a223b49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Walls_Street01B
+    second: {fileID: 2100000, guid: 8045222c575dc9d449dfacb4129fceb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TX_Win_Glass01
+    second: {fileID: 2100000, guid: 9a41f3e1fa017514e9990eab28dbad5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_GrassLawnPatch01B_Alpha
+    second: {fileID: 2100000, guid: 5b11ebf0ff7a9eb43a47bc840af15943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreeFir02C_Alpha
+    second: {fileID: 2100000, guid: 1a553048eda882b40a12df1c2cb21480, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreePine02B_Alpha
+    second: {fileID: 2100000, guid: bb96d40f10bfb9043b6f94d15703613d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreePineTall01B_Bark
+    second: {fileID: 2100000, guid: fd2e4c5f530ea52458ba99e93b942feb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreeSpruce01B_Alpha
+    second: {fileID: 2100000, guid: 534b8315a2cbad64d85e7136b574c11c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreeSpruce01B_Bark
+    second: {fileID: 2100000, guid: b97d93f30c8e4c144b9c9c991e0de520, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreeYew01A_Alpha
+    second: {fileID: 2100000, guid: e2bffcbe85cddba4787e7a3d509658da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Flora_TreeYew01A_Bark
+    second: {fileID: 2100000, guid: 4058117336e0cab4ebb391f46e49c1d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Terra_GrassClumpTile03B
+    second: {fileID: 2100000, guid: f295fa6b225653248a1728fb73c86013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T_Terra_GrassClumpTile03B_Field
+    second: {fileID: 2100000, guid: 60355244df601a0498d6d2932b358735, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_forklifter_01_textures_stearingwheel_0
+    second: {fileID: 2100000, guid: d3cf207d704314b43a948214a375a688, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_forklifter_01_textures_stick_01
+    second: {fileID: 2100000, guid: a3d3848d987e13c41862688e201487a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_backmirror_01
+    second: {fileID: 2100000, guid: 4dcea48317e392d4ea3254131638749e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_dashboard_
+    second: {fileID: 2100000, guid: a4d644c14446ec643b9e51f8a0972441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_front
+    second: {fileID: 2100000, guid: 6399392998d29da48832fb74cd7cfd04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_inside
+    second: {fileID: 2100000, guid: 12d2ea2a7d2076a4bb34340a3cbeeb81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_rear_01
+    second: {fileID: 2100000, guid: 9c5a7c11cdf9c694b9c714d49b96ef5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_seat_01
+    second: {fileID: 2100000, guid: e0ea0b95bf698d947b37bd10d7b5a6a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_wheel_01
+    second: {fileID: 2100000, guid: 0ca04a7579e90a24ba9b6c04c9bc5632, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_bus_windows_01
+    second: {fileID: 2100000, guid: 8bb8c0a52e15cf0449f51789d2f527a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_coutch_01
+    second: {fileID: 2100000, guid: 888367c5df78e7f4286ed0ed9c9d6a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_exterior_d
+    second: {fileID: 2100000, guid: dd3bbf1bf10e6de469a3cff01c62eb29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_exterior_d.001
+    second: {fileID: 2100000, guid: 05bf32d19f13ddf439646a617934442c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_school_buss_01_textures_schoolbus_door
+    second: {fileID: 2100000, guid: baeb42d8f46660541b20d036ddb0fa53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_vehicles_civilian_streetcar_01_textures_driverseat_01
+    second: {fileID: 2100000, guid: 2b718a4e2290ba14c8b3aa5610580110, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: not_found
+    second: {fileID: 2100000, guid: 41c6a62e50d608f428c140ffc65b178e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_fabric_bus_carpet_01
+    second: {fileID: 2100000, guid: 0cb974af95796094590b6c23e3a92c62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_metal_aluminium_worn_01
+    second: {fileID: 2100000, guid: 32ae9119fc51a8e4ca1c0cefc0e7da34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_metalpainted_buss_bodypannel_01
+    second: {fileID: 2100000, guid: c3ee47868205ac6459c270a726811d06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_metalpainted_cealing_pannel_02
+    second: {fileID: 2100000, guid: e16d05bef59e384419d1e8707957a876, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_rubber_rubber_carpet_01
+    second: {fileID: 2100000, guid: 912e720405bbad94b9d321d5b302202d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_tiles_wood_fine_wood_polished_01
+    second: {fileID: 2100000, guid: 831252f3c2d96b045b5f1df4622136c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: textures_trim_paint_detail_pannels_01
+    second: {fileID: 2100000, guid: 891d6aabb5f386446831e95ae029de95, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
