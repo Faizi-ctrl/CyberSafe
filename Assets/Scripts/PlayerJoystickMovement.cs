@@ -4,162 +4,65 @@ using UnityEngine;
 
 public class PlayerJoystickMovement : MonoBehaviour
 {
-    [Header("Joystick Settings")]
-    public FloatingJoystick joystick;
-    public Transform cameraTransform;
-    public CharacterController cC;
+    [Header("Movement Settings")]
+    public float moveSpeed = 2f;
+    public float sprintSpeed = 4f;
+
+    [Header("References")]
+    public CharacterController controller;
+    public Transform cam;
     public Animator animator;
-
-    [Header("Surface Check")]
-    public Transform surfaceCheck;
-    public float surfaceDistance = 0.6f;
     public LayerMask surfaceMask;
-    private bool onSurface;
-
-    private Vector3 velocity;
-    public float gravity = -9.81f;
-    public float jumpForce = 2f;
-
-    [Header("Stats")]
-    public PlayerStats playerStats;
+    [Header("Joystick Input")]
+    public Joystick joystick; // Reference to your on-screen joystick
+    public bool isSprinting = false;
 
     private float turnSmoothVelocity;
     public float turnSmoothTime = 0.1f;
 
-    private bool jumpRequested = false;
-    private bool isJumping = false;
-
-    private bool punchInProgress = false;
-
-    void Update()
+    private void Update()
     {
-        GroundCheck();
-        ApplyGravity();
-      //  MovePlayer();
-        HandleJump();
+        HandleMovement();
     }
 
-    void GroundCheck()
+    void HandleMovement()
     {
-        onSurface = Physics.CheckSphere(surfaceCheck.position, surfaceDistance, surfaceMask);
-        if (onSurface && velocity.y < 0)
-        {
-            velocity.y = -2f;
+        float horizontal = joystick.Horizontal;
+        float vertical = joystick.Vertical;
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-            if (isJumping)
-            {
-                isJumping = false;
-                animator.SetBool("isJumping", false);
-            }
+        if (direction.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+            float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
+            controller.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
+
+            // Animation
+            animator.SetBool("idle", false);
+            animator.SetBool("walk", !isSprinting);
+            animator.SetBool("running", isSprinting);
+        }
+        else
+        {
+            animator.SetBool("idle", true);
+            animator.SetBool("walk", false);
+            animator.SetBool("running", false);
         }
     }
 
-    void ApplyGravity()
+    // These methods can be hooked to Sprint button UI events
+    public void StartSprinting()
     {
-        velocity.y += gravity * Time.deltaTime;
-        cC.Move(velocity * Time.deltaTime);
+        isSprinting = true;
     }
 
-    // void MovePlayer()
-    // {
-    //     Vector3 direction = new Vector3(joystick.Horizontal, 0f, joystick.Vertical).normalized;
-
-    //     if (direction.magnitude >= 0.1f)
-    //     {
-    //         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cameraTransform.eulerAngles.y;
-    //         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-    //         transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-    //         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
-    //         float moveSpeed = playerStats.isSprinting > 0f
-    //             ? playerStats.sprintSpeed
-    //             : playerStats.walkSpeed;
-
-    //         // Move only if not punching
-    //         if (!punchInProgress)
-    //             cC.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
-
-    //         animator.SetBool("walk", !playerStats.isSprinting && !punchInProgress);
-    //         animator.SetBool("running", playerStats.isSprinting && !punchInProgress);
-    //     }
-    //     else
-    //     {
-    //         animator.SetBool("walk", false);
-    //         animator.SetBool("running", false);
-    //     }
-    // }
-
-    public void JumpRequest()
+    public void StopSprinting()
     {
-        jumpRequested = true;
-    }
-
-    public void HandleJump()
-    {
-        if (onSurface && jumpRequested && !isJumping)
-        {
-            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-            isJumping = true;
-            animator.SetBool("isJumping", true);
-        }
-
-        jumpRequested = false;
-    }
-
-    public void PunchRequest()
-    {
-        if (!punchInProgress)
-        {
-            StartCoroutine(PunchCoroutine());
-        }
-    }
-
-    public float punchRange = 2f;
-    public LayerMask zombieLayer;
-
-    private IEnumerator PunchCoroutine()
-    {
-        punchInProgress = true;
-
-        animator.SetTrigger("punch");
-
-        // Get punch animation duration
-        float punchDuration = 0.5f; // fallback
-        RuntimeAnimatorController ac = animator.runtimeAnimatorController;
-        foreach (var clip in ac.animationClips)
-        {
-            if (clip.name.ToLower().Contains("punch"))
-            {
-                punchDuration = clip.length;
-                break;
-            }
-        }
-
-        // Wait until mid-punch for impact
-        yield return new WaitForSeconds(punchDuration * 0.4f); // adjust if needed
-
-        // Apply damage
-        Collider[] hits = Physics.OverlapSphere(transform.position + transform.forward, punchRange, zombieLayer);
-        foreach (var hit in hits)
-        {
-            // ZombieHealth zombie = hit.GetComponent<ZombieHealth>();
-            // if (zombie != null)
-            // {
-            //     zombie.TakeDamage(1);
-            //     zombie.ShowHealthBar(true);
-            // }
-        }
-
-        // Wait for rest of the animation
-        yield return new WaitForSeconds(punchDuration * 0.6f);
-
-        punchInProgress = false;
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position + transform.forward, punchRange);
+        isSprinting = false;
     }
 }

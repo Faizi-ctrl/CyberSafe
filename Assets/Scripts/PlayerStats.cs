@@ -7,18 +7,18 @@ public class PlayerStats : MonoBehaviour
 {
     [Header("Health Settings")]
     public float maxHealth = 100f;
-    public float healthRegenRate = 2f;
-    public float healthRegenDelay = 2f;
-    private float currentHealth;
-    private float lastDamagedTime;
+    // public float healthRegenRate = 2f;
+    // public float healthRegenDelay = 2f;
+    // private float currentHealth;
+    // private float lastDamagedTime;
 
     [Header("Stamina Settings")]
-    public float maxStamina = 100f;
-    public float staminaRegenRate = 5f;
-    public float staminaDrainRate = 20f; // per second
-    public float staminaRegenDelay = 1f;
-    private float currentStamina;
-    private float lastSprintTime;
+    // public float maxStamina = 100f;
+    // public float staminaRegenRate = 5f;
+    // public float staminaDrainRate = 20f; // per second
+    // public float staminaRegenDelay = 1f;
+    // private float currentStamina;
+    // private float lastSprintTime;
 
     [Header("Sprinting")]
     public float walkSpeed = 5.0f;
@@ -52,12 +52,12 @@ public class PlayerStats : MonoBehaviour
 
         float speed = isSprinting ? sprintSpeed : walkSpeed;
 
-        if (isSprinting)
-        {
-            currentStamina -= staminaDrainRate * Time.deltaTime;
-            currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
-            lastSprintTime = Time.time;
-        }
+        // if (isSprinting)
+        // {
+        //     currentStamina -= staminaDrainRate * Time.deltaTime;
+        //     currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+        //     lastSprintTime = Time.time;
+        // }
 
         moveDirection = input * speed;
     }
@@ -156,16 +156,16 @@ public class PlayerStats : MonoBehaviour
     //     }
     // }
 
-    public void StartSprinting()
-    {
-        if (maxStamina > 0f)
-            isSprinting = true;
-    }
+    // public void StartSprinting()
+    // {
+    //     if (maxStamina > 0f)
+    //         isSprinting = true;
+    // }
 
-    public void StopSprinting()
-    {
-        isSprinting = false;
-    }
+    // public void StopSprinting()
+    // {
+    //     isSprinting = false;
+    // }
 
     // // For UI
     // public float GetHealth() => currentHealth;
